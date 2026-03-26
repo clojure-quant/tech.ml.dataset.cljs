@@ -3,7 +3,7 @@
    [tech.v3.dataset :as ds]
    [transit.io :refer [encode]]
    [dali.store.cache :refer [store-once]]
-     [tablecloth.api :as tc]
+   [tablecloth.api :as tc]
    [tick.core :as t]
    ))
 

@@ -1,10 +1,9 @@
-{:name "techml-dataset-cljs"
+{:extension/name :techml-dataset-cljs
  ; build
- :lazy true ; needs to be lazy as it depends on a lazy module
- ;:depends-on #{:tick}
- :cljs-namespace [tech.v3.dataset
+ :cljs/module :main
+ :cljs/namespace [tech.v3.dataset
                   cquant.tmlds]
- :cljs-ns-bindings {'tech.v3.dataset {'->>dataset tech.v3.dataset/->>dataset
+ :cljs/ns-bindings {'tech.v3.dataset {'->>dataset tech.v3.dataset/->>dataset
                                       '->dataset tech.v3.dataset/->dataset
                                       'column tech.v3.dataset/column
                                       'column->data tech.v3.dataset/column->data
